@@ -52,6 +52,7 @@ fprintf('Normalizing Features ...\n');
 [X mu sigma] = featureNormalize(X);
 
 % Add intercept term to X
+size(X)
 X = [ones(m, 1) X];
 
 
@@ -83,28 +84,51 @@ fprintf('Running gradient descent ...\n');
 
 % Choose some alpha value
 alpha = 0.01;
-num_iters = 400;
+num_iters = 300;
 
-% Init Theta and Run Gradient Descent 
 theta = zeros(3, 1);
-[theta, J_history] = gradientDescentMulti(X, y, theta, alpha, num_iters);
-
-% Plot the convergence graph
-figure;
-plot(1:numel(J_history), J_history, '-b', 'LineWidth', 2);
-xlabel('Number of iterations');
-ylabel('Cost J');
+alpha_vec=0.5:0.001:0.1;
+num_alpha=length(alpha_vec);
+js=zeros(1,num_alpha);
+% Init Theta and Run Gradient Descent 
+%for i=1:num_alpha
+%alpha=alpha_vec(i);
+%theta = zeros(3, 1);
+%[theta, J_history] = gradientDescentMulti(X, y, theta, alpha, num_iters);
+%js(i)=J_history(num_iters);
+%endfor
+%min(js)
+%figure;
+%plot(alpha_vec, js,'-g', 'LineWidth', 1);
+%xlabel('alpha');
+%ylabel('Js');
+%[min_j,index]=min(js);
+%alpha=alpha_vec(index);
+[theta, J_history] = gradientDescentMulti(X, y, theta,0.0073, num_iters);
 
 % Display gradient descent's result
 fprintf('Theta computed from gradient descent: \n');
 fprintf(' %f \n', theta);
 fprintf('\n');
-
+  %errs=(((X*theta).-y).^2).^.5;
+  
+  %figure;
+  %hold on;
+  %plot(1:numel(errs), errs,'-b', 'LineWidth', 2);
+  %xlabel('item_ind');
+  %ylabel('error');
+  
 % Estimate the price of a 1650 sq-ft, 3 br house
 % ====================== YOUR CODE HERE ======================
 % Recall that the first column of X is all-ones. Thus, it does
 % not need to be normalized.
-price = 0; % You should change this
+pred=[1650 3];
+pred=(pred-mu);
+for i=1:length(mu)
+  pred(i)=pred(i)/sigma(i);
+endfor
+pred=[1 pred];
+price = pred*theta; % You should change this
 
 
 % ============================================================
@@ -139,17 +163,24 @@ m = length(y);
 X = [ones(m, 1) X];
 
 % Calculate the parameters from the normal equation
-theta = normalEqn(X, y);
+thota=zeros(1,3);
+thota = normalEqn(X, y);
 
 % Display normal equation's result
 fprintf('Theta computed from the normal equations: \n');
-fprintf(' %f \n', theta);
+fprintf(' %f \n', thota);
 fprintf('\n');
 
 
+  %errs=(((X*thota).-y).^2).^.5;
+  
+  
+  %plot(1:numel(errs), errs,'-r', 'LineWidth', 2);
+  
+  
 % Estimate the price of a 1650 sq-ft, 3 br house
 % ====================== YOUR CODE HERE ======================
-price = 0; % You should change this
+price = pred*thota; % You should change this
 
 
 % ============================================================
