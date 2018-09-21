@@ -12,6 +12,12 @@ vocabList = getVocabList();
 % Init return value
 word_indices = [];
 
+%make vocab into a hashtable with search time of O(1)
+vocab_map=javaObject('java.util.Hashtable');
+for i = 1:numel(vocabList)
+  vocab_map.put(vocabList{i},i);
+endfor
+
 % ========================== Preprocess Email ===========================
 
 % Find the Headers ( \n\n and remove )
@@ -96,12 +102,11 @@ while ~isempty(email_contents)
     % Note: You can use strcmp(str1, str2) to compare two strings (str1 and
     %       str2). It will return 1 only if the two strings are equivalent.
     %
-
-
-
-
-
-
+    vocab_index=vocab_map.get(str);
+    if vocab_index
+      word_indices(end+1)=vocab_index;
+    endif
+    
 
 
 
