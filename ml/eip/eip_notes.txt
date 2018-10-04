@@ -1,0 +1,18 @@
+Session 1
+spiking neural nets
+bored cat experiment
+kernel/feature extractor => feature => channel
+same kernel =>similar features => 1 channel
+1 kernel => 1 channel
+Typora
+MathJax
+
+
+===============================================================================
+Session 2
+since batch size is less like 32, un common stuff wont be amplified
+softmax not used in accuracy critical
+three blue and one brown
+unsupervised => rewards
+supervised => loss/error
+net-disect
