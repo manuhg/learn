@@ -41,11 +41,13 @@ For example if we perform a 9x9 convolution over a channel of resolution 9x9 the
 | 5x5   | 3x3    | 3x3    |
 | 3x3   | 3x3    | 1x1    |
 
- 
-
 #### Feature Maps
 
+Feature maps is a collection of features detected by kernels in a given layer of CNN, arranged spatially according the the region they were detected. Feature maps hence tell us which feature was found where. Hence further going deep in a CNN, feature map from previous layer(s) can be used to detect more complex features. Say for example to detect an Face, 												input => lines => curves => 2D shapes like circle,etc => eyes/nose/ears => Face. As receptive field increases, smaller features can be combined to yield more meaningful features.
+
 #### Feature Engineering (older computer vision concept)
+
+Earlier, in computer vision use of neural networks was not prevalent. Hence the questions of what features to be extracted at what layer and what to ignore was decided solely by the human/researcher. This required the researchers to have significant domain knowledge and intricacies and pitfalls. Failing which would fail the model. Hence evaluating of features and their contribution in yielding a desired output was termed as Feature Engineering. This was very crucial since features are the most important things that define the success or failure of a model. We can hence in short say, Feature engineering is deciding features for a computer vision model, based on domain knowledge and human experience and evaluating their contribution.
 
 #### Activation Function
 
@@ -53,5 +55,5 @@ For example if we perform a 9x9 convolution over a channel of resolution 9x9 the
 
 #### Receptive Field.
 
-#### 10 examples of use of [MathJax ](https://support.typora.io/Markdown-Reference/#math-blocks) in Markdown
+#### 10 examples of use of [MathJax](https://support.typora.io/Markdown-Reference/#math-blocks) in Markdown
 
