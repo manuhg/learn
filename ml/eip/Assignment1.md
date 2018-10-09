@@ -8,7 +8,7 @@ A convolution is a process in which a function or a kernel extracts a specific p
 
 We may, in lay man terms say that a convolution is decompressing the given output.
 
-![convolution](/home/manu/dev/learn/ml/eip/convolution.jpeg)
+![convolution](https://raw.githubusercontent.com/manuhg/learn/master/ml/eip/convolution.jpeg)
 
 
 
@@ -71,7 +71,7 @@ Activation function is the key factor in a neural network since it introduces no
 
 Activation function serves like a threshold function, the threshold or the decision boundary varies based on the accuracy of the model i.e more the accuracy, the decision boundary segregates output in more accurate fashion.
 
-![Activation Function](/home/manu/dev/learn/ml/eip/activation-function.png)
+![Activation Function](https://raw.githubusercontent.com/manuhg/learn/master/ml/eip/activation-function.png)
 
 
 
@@ -85,7 +85,7 @@ i) Log on to https://github.com
 
 ii) Enter a desired user name, your email id and a password ( not related to password of your email id ). It is recommended to keep a meaningful user name or at least avoid numbers . Click on Sign up for GitHub.
 
-![Github Signup](/home/manu/dev/learn/ml/eip/github_signup.png)
+![Github Signup](https://raw.githubusercontent.com/manuhg/learn/master/ml/eip/github_signup.png)
 
 iii) Chose a plan, i.e use a free plan if you do not need to have private repositories. However if you want private repositories and you can prove you are a university student, you can get unlimited free repositories for 2 years for free by applying [here](https://education.github.com/pack). Otherwise chose paid plan. If you are an enterprise/organization you may select to setup the same. Click on continue.
 

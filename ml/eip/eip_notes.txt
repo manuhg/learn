@@ -16,3 +16,14 @@ three blue and one brown
 unsupervised => rewards
 supervised => loss/error
 net-disect
+===============================================================================
+Session 3
+unet, deconvolution
+theano
+disadvantage of dept convo
+Xception network
+label smoothing works very well!
+
+
+cycling learning rate is awesome
+use sgd and adam or reverse for improved accuracy
