@@ -1,0 +1,65 @@
+similar accuracy in cycles in clr can be different minimas
+error surface topo depends on the fucntions (obvious)
+adam is the best. gd no less either
+He-et-al Initialization
+exploding and vanishing gradients
+
+##1!
+https://github.com/taki0112/Densenet-Tensorflow
+
+
+implement norm over al images
+channel norm if possible
+try 0.001
+cosine annealing instead of clr
+
+32x32 -> 36x36 -> random crop ->32x32
+
+
+
+https://www.kdnuggets.com/2017/08/train-deep-learning-faster-freezeout.html
+
+https://openreview.net/forum?id=H1A5ztj3b
+
+
+
+
+https://medium.com/@wwwbbb8510/lessons-learned-from-reproducing-resnet-and-densenet-on-cifar-10-dataset-6e25b03328da
+
+https://arxiv.org/pdf/1502.01852.pdf
+
+https://www.kdnuggets.com/2017/08/train-deep-learning-faster-snapshot-ensembling.html
+https://arxiv.org/pdf/1608.03983.pdf
+
+
+https://arxiv.org/pdf/1312.4400v3.pdf
+
+https://deeplearningplaybook.com/
+https://gumroad.com/l/IHDj
+
+
+
+https://arxiv.org/pdf/1506.01186.pdf
+https://arxiv.org/pdf/1608.06993.pdf
+https://arxiv.org/pdf/1706.04983.pdf
+https://www.google.co.in/search?q=sgdr+vs+clr&oq=sgdr+vs+clr&aqs=chrome..69i57.3295j1j7&sourceid=chrome&ie=UTF-8
+https://towardsdatascience.com/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0
+http://teleported.in/posts/cyclic-learning-rate/
+https://techburst.io/improving-the-way-we-work-with-learning-rate-5e99554f163b
+http://cbmm.mit.edu/sites/default/files/publications/CBMM-Memo-067.pdf
+https://arxiv.org/pdf/1611.03530.pdf
+https://medium.com/intuitionmachine/rethinking-generalization-in-deep-learning-ec66ed684ace
+https://openreview.net/forum?id=rkuDV6iex
+https://medium.com/intuitionmachine/eight-deserving-deep-learning-papers-that-were-rejected-at-iclr-2017-119e19a4c30b
+https://arxiv.org/pdf/1702.04283.pdf
+https://arxiv.org/pdf/1703.00810.pdf
+https://arxiv.org/pdf/1703.09833v1.pdf
+
+http://blog.dlib.net/2017/12/a-global-optimization-algorithm-worth.html
+
+
+
+https://openreview.net/forum?id=H1A5ztj3b
+https://www.quora.com/Intuitively-how-does-mini-batch-size-affect-the-performance-of-stochastic-gradient-descent
+https://machinelearningmastery.com/improve-deep-learning-performance/
+https://blog.slavv.com/37-reasons-why-your-neural-network-is-not-working-4020854bd607
