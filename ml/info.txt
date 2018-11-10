@@ -1,0 +1,42 @@
+=======================author's version==============
+BN
+RELu
+bottleneck-conv
+
+bottleneck-bn
+relu
+conv
+
+dropout
+concat
+
+
+
+
+TR:
+bn
+relu
+conv
+avg pool.
+
+NO dropout~
+
+
+
+
+=======================vanilla EIP=================
+
+Dense:
+	BN
+	RELu
+	conv
+
+	dropout
+	concat
+
+Transition:
+	BN
+	RELu
+	conv
+	avg pool
+	dropout
