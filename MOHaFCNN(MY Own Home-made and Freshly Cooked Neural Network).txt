@@ -1,0 +1,42 @@
+MOHaFCNN(MY Own Home-made and Freshly Cooked Neural Network)
+To implement:
+http://andyljones.tumblr.com/post/110998971763/an-explanation-of-xavier-initialization (http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf)
+http://christopher5106.github.io/
+https://blog.xrds.acm.org/2016/06/convolutional-neural-networks-cnns-illustrated-explanation
+
+Decentralized ML training
+https://github.com/uber/horovod
+
+Misc & exciting
+https://projecteuler.net/
+Kaggle-like : https://www.crowdai.org/
+
+
+PDI aka Gidrog
+https://www.crowdai.org/challenges/plantvillage-disease-classification-challenge/dataset_files
+inaturalist - https://github.com/visipedia/inat_comp/blob/master/2017/README.md
+
+Voicesep
+https://github.com/SeanNaren/deepspeech.torch
+https://github.com/buriburisuri/speech-to-text-wavenet	
+https://github.com/mozilla/DeepSpeech
+https://github.com/pannous/tensorflow-speech-recognition
+https://github.com/baidu-research/warp-ctc
+https://www.tensorflow.org/tutorials/sequences/audio_recognition
+https://www.kaggle.com/c/tensorflow-speech-recognition-challenge/discussion/43576
+https://www.kaggle.com/mmoreaux/environmental-sound-classification-50
+https://www.kaggle.com/fizzbuzz/beginner-s-guide-to-audio-data
+https://www.kaggle.com/c/freesound-audio-tagging/data
+
+Football / Yolo
+https://github.com/Sheph/masknet
+https://github.com/matterport/Mask_RCNN
+https://github.com/thtrieu/darkflow
+https://github.com/lyxok1/Tiny-DSOD
+https://arxiv.org/pdf/1506.02640.pdf
+https://hackernoon.com/understanding-yolo-f5a74bbc7967
+https://github.com/ayooshkathuria/pytorch-yolo-v3
+https://towardsdatascience.com/yolov2-to-detect-your-own-objects-soccer-ball-using-darkflow-a4f98d5ce5bf
+https://github.com/deep-diver/Soccer-Ball-Detection-YOLOv2/blob/master/YOLOv2-Train.ipynb
+https://github.com/szq0214/DSOD
+https://arxiv.org/pdf/1311.2524.pdf
