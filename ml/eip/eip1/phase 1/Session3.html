@@ -1,0 +1,1190 @@
+<html>
+                 <head>
+                   <meta charset="UTF-8">
+                   <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1">
+                   <style id="style">
+@font-face {
+  font-family: 'Lato';
+  src: url('file:///Applications/Boostnote.app/Contents/Resources/app/resources/fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+       url('file:///Applications/Boostnote.app/Contents/Resources/app/resources/fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+       url('file:///Applications/Boostnote.app/Contents/Resources/app/resources/fonts/Lato-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('file:///Applications/Boostnote.app/Contents/Resources/app/resources/fonts/Lato-Black.woff2') format('woff2'), /* Modern Browsers */
+       url('file:///Applications/Boostnote.app/Contents/Resources/app/resources/fonts/Lato-Black.woff') format('woff'), /* Modern Browsers */
+       url('file:///Applications/Boostnote.app/Contents/Resources/app/resources/fonts/Lato-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body {
+  font-size: 16px;
+  padding: 15px;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+body .katex {
+  font: 400 1.2em 'KaTeX_Main';
+  line-height: 1.2em;
+  white-space: initial;
+  text-indent: 0;
+}
+body .katex .mfrac>.vlist>span:nth-child(2) {
+  top: 0 !important;
+}
+body .katex-error {
+  background-color: #f2dede;
+  color: #a64444;
+  padding: 5px;
+  margin: -5px;
+  border-radius: 5px;
+}
+body .flowchart-error,
+body .sequence-error {
+  background-color: #f2dede;
+  color: #a64444;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-box-pack: left;
+  -moz-box-pack: left;
+  -o-box-pack: left;
+  -ms-flex-pack: left;
+  -webkit-justify-content: left;
+  justify-content: left;
+}
+li label.taskListItem {
+  margin-left: -1.8em;
+}
+li label.taskListItem.checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+div.math-rendered {
+  text-align: center;
+}
+.math-failed {
+  background-color: rgba(255,0,0,0.1);
+  color: #d90000;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+sup {
+  position: relative;
+  top: -0.4em;
+  font-size: 0.8em;
+  vertical-align: top;
+}
+sub {
+  position: relative;
+  bottom: -0.4em;
+  font-size: 0.8em;
+  vertical-align: top;
+}
+a {
+  color: #2bac8f;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: -5px;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  transition: 0.1s;
+}
+a img {
+  vertical-align: sub;
+}
+a:hover {
+  color: #2eb899;
+  text-decoration: underline;
+  background-color: rgba(255,201,92,0.3);
+}
+a:visited {
+  color: #2bac8f;
+}
+hr {
+  border-top: none;
+  border-bottom: solid 1px #d0d0d0;
+  margin: 15px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  word-wrap: break-word;
+}
+h1 {
+  font-size: 2.55em;
+  padding-bottom: 0.3em;
+  line-height: 1.2em;
+  border-bottom: solid 1px #d0d0d0;
+  margin: 1em 0 0.44em;
+}
+h1:first-child {
+  margin-top: 0;
+}
+h2 {
+  font-size: 1.75em;
+  padding-bottom: 0.3em;
+  line-height: 1.225em;
+  border-bottom: solid 1px #d0d0d0;
+  margin: 1em 0 0.57em;
+}
+h2:first-child {
+  margin-top: 0;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.43em;
+  margin: 1em 0 0.66em;
+}
+h4 {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  margin: 1em 0 0.8em;
+}
+h5 {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 1em 0 1em;
+}
+h6 {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 1em 0 1em;
+  color: #777;
+}
+p {
+  line-height: 1.6em;
+  margin: 0 0 1em;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+img {
+  max-width: 100%;
+}
+strong,
+b {
+  font-weight: bold;
+}
+em,
+i {
+  font-style: italic;
+}
+s,
+del,
+strike {
+  text-decoration: line-through;
+}
+u {
+  text-decoration: underline;
+}
+blockquote {
+  border-left: solid 4px #3fb399;
+  margin: 0 0 1em;
+  padding: 0 25px;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+ul li {
+  display: list-item;
+}
+ul li.taskListItem {
+  list-style: none;
+}
+ul li p {
+  margin: 0;
+}
+ul>li>ul,
+ul>li>ol {
+  margin: 0;
+}
+ul>li>ul {
+  list-style-type: circle;
+}
+ul>li>ul>li>ul {
+  list-style-type: square;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+ol li {
+  display: list-item;
+}
+ol li p {
+  margin: 0;
+}
+ol>li>ul,
+ol>li>ol {
+  margin: 0;
+}
+code {
+  color: #cc305f;
+  padding: 0.2em 0.4em;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  font-size: 1em;
+  text-decoration: none;
+  margin-right: 2px;
+}
+pre {
+  padding: 0.5em !important;
+  border: solid 1px #d1d1d1;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 0 0 1em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  line-height: 1.4em;
+}
+pre.flowchart,
+pre.sequence {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #fff;
+}
+pre.CodeMirror {
+  height: initial;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+pre.CodeMirror>code {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-x: auto;
+}
+pre code {
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+pre>span.filename {
+  width: 100%;
+  border-radius: 5px 0px 0px 0px;
+  margin: -8px 100% 8px -8px;
+  padding: 0px 6px;
+  background-color: #777;
+  color: #fff;
+}
+pre>span.lineNumber {
+  display: none;
+  font-size: 1em;
+  padding: 0.5em 0;
+  margin: -0.5em 0.5em -0.5em -0.5em;
+  border-right: 1px solid;
+  text-align: right;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+pre>span.lineNumber.CodeMirror-gutters {
+  position: initial;
+  top: initial;
+  left: initial;
+  min-height: 0 !important;
+}
+pre>span.lineNumber>span {
+  display: block;
+  padding: 0 0.5em 0;
+}
+table {
+  display: block;
+  width: 100%;
+  margin: 0 0 1em;
+}
+table thead tr {
+  background-color: #fff;
+}
+table thead th {
+  border-style: solid;
+  padding: 6px 13px;
+  line-height: 1.6;
+  border-width: 1px 0 2px 1px;
+  border-color: #d0d0d0;
+  font-weight: bold;
+}
+table thead th:last-child {
+  border-right: solid 1px #d0d0d0;
+}
+table tbody tr:nth-child(2n + 1) {
+  background-color: #f9f9f9;
+}
+table tbody tr:nth-child(2n) {
+  background-color: #fff;
+}
+table tbody td {
+  border-style: solid;
+  padding: 6px 13px;
+  line-height: 1.6;
+  border-width: 0 0 1px 1px;
+  border-color: #d0d0d0;
+}
+table tbody td:last-child {
+  border-right: solid 1px #d0d0d0;
+}
+kbd {
+  background-color: #fafbfc;
+  border: solid 1px #d0d0d0;
+  border-bottom-color: #888;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 0 #959da5;
+  box-shadow: inset 0 -1px 0 #959da5;
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 1;
+  padding: 3px 5px;
+}
+body[data-theme="dark"] {
+  color: #f9f9f9;
+  border-color: #444b59;
+  background-color: #2c3033;
+}
+body[data-theme="dark"] a:hover {
+  background-color: rgba(90,214,186,0.2) !important;
+}
+body[data-theme="dark"] code {
+  color: #ea6730;
+  border-color: #3d4450;
+  background-color: #363a3e;
+}
+body[data-theme="dark"] pre {
+  border-color: #474f5c;
+}
+body[data-theme="dark"] pre code {
+  background-color: transparent;
+}
+body[data-theme="dark"] label.taskListItem {
+  background-color: #2c3033;
+}
+body[data-theme="dark"] table thead tr {
+  background-color: #282b2e;
+}
+body[data-theme="dark"] table thead th {
+  border-color: #444b59;
+}
+body[data-theme="dark"] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="dark"] table tbody tr:nth-child(2n + 1) {
+  background-color: #2c3033;
+}
+body[data-theme="dark"] table tbody tr:nth-child(2n) {
+  background-color: #282b2e;
+}
+body[data-theme="dark"] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme="dark"] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="dark"] kbd {
+  background-color: #444b59;
+  color: #f9f9f9;
+}
+body[data-theme="solarized-dark"] {
+  color: #93a1a1;
+  border-color: #444b59;
+  background-color: #073642;
+}
+body[data-theme="solarized-dark"] table thead tr {
+  background-color: #06313b;
+}
+body[data-theme="solarized-dark"] table thead th {
+  border-color: #444b59;
+}
+body[data-theme="solarized-dark"] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="solarized-dark"] table tbody tr:nth-child(2n + 1) {
+  background-color: #073642;
+}
+body[data-theme="solarized-dark"] table tbody tr:nth-child(2n) {
+  background-color: #06313b;
+}
+body[data-theme="solarized-dark"] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme="solarized-dark"] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+/*# sourceMappingURL=browser/components/markdown.css.map */
+body {
+  font-family: 'Helvetica','helvetica','arial','sans-serif';
+  font-size: 14px;
+  padding-bottom: 90vh;
+}
+code {
+  font-family: 'Monaco','Consolas','Monaco','Menlo','Ubuntu Mono','Consolas','source-code-pro','monospace';
+  background-color: rgba(0,0,0,0.04);
+}
+.lineNumber {
+  false
+  font-family: 'Monaco','Consolas','Monaco','Menlo','Ubuntu Mono','Consolas','source-code-pro','monospace';
+}
+
+.clipboardButton {
+  color: rgba(147,147,149,0.8);;
+  fill: rgba(147,147,149,1);;
+  border-radius: 50%;
+  margin: 0px 10px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.clipboardButton:hover {
+  transition: 0.2s;
+  color: #939395;
+  fill: #939395;
+  background-color: rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  border: none;
+}
+
+h1 {
+  padding-bottom: 4px;
+  margin: 1em 0 8px;
+}
+
+h2 {
+  padding-bottom: 0.2em;
+  margin: 1em 0 0.37em;
+}
+
+body p {
+  white-space: normal;
+}
+</style>
+                   <link rel="stylesheet" href="css/dracula.css"><link rel="stylesheet" href="css/katex.min.css"><link rel="stylesheet" href="css/codemirror.css">
+                 </head>
+                 <body><h1 data-line="0" id="Session-3">Session 3</h1>
+<p data-line="2"><img src="images/0.mwp71v173u" alt="0.mwp71v173u" /></p>
+<p data-line="4"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<p data-line="17">&gt;Welcome Everyone!<br />
+&gt;</p>
+<p data-line="20"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<p data-line="34"><strong>Administrative Stuff</strong></p>
+<ol>
+<li>Problems in assignment 2?</li>
+<li>Google Drive link is also shared, you need to upload files to your respective batches.</li>
+<li>Deadline for Assignment 2 is t + 7</li>
+</ol>
+<p data-line="41"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h1 data-line="55" id="Convolution-Foundations-nbsp">Convolution Foundations </h1>
+<p data-line="56"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="69" id="What-is-Convolution">What is Convolution?</h2>
+<p data-line="71">The process of extracting features from input data using kernels/filters. Filter moves discretely on top of data-plane/channel, scales the input data equal to the size of it's receptive field, sums this results and creates a new feature map.</p>
+<p data-line="73"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="81" id="4-3-Convolution">4-3 Convolution</h2>
+<p data-line="83"><img src="images/4-3.gif" alt="4-3.gif" /><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="99" id="5-3-Convolution">5-3 Convolution</h2>
+<p data-line="101"><img src="images/5-3.gif" alt="5-3.gif" /><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="117" id="The-Checkerboard-Issue">The Checkerboard Issue</h2>
+<p data-line="119"><img src="http://deeplearning.net/software/theano/_images/no_padding_strides.gif" alt="image" /></p>
+<p data-line="121"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="136" id="Behind-the-Scenes">Behind the Scenes</h2>
+<p data-line="138"><img src="http://deeplearning.net/software/theano/_images/numerical_no_padding_no_strides.gif" alt="image" width="700" /></p>
+<p data-line="140"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<p data-line="149"><img src="http://machinelearninguru.com/_images/topics/computer_vision/basics/convolutional_layer_1/rgb.gif" alt="multi-channel" /></p>
+<p data-line="151"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="168" id="Concept-of-Channels">Concept of Channels</h2>
+<p data-line="170"><img src="images/image.gif" alt="image.gif" /></p>
+<p data-line="172"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="185" id="Convolution-Mathematics">Convolution Mathematics</h2>
+<table data-line="187">
+<thead>
+<tr>
+<th colspan="4">x</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody>
+<tbody></tbody>
+</table>
+<table data-line="194">
+<thead>
+<tr>
+<th colspan="4">Kernel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.42</td>
+<td>0.88</td>
+<td>0.55</td>
+</tr>
+<tr>
+<td>0.10</td>
+<td>0.73</td>
+<td>0.68</td>
+</tr>
+<tr>
+<td>0.60</td>
+<td>0.18</td>
+<td>0.47</td>
+</tr>
+<tr>
+<td>0.92</td>
+<td>0.11</td>
+<td>0.52</td>
+</tr>
+</tbody>
+<tbody></tbody>
+</table>
+<table data-line="202">
+<thead>
+<tr>
+<th colspan="4">ReLU Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.02</td>
+<td>1.06</td>
+<td>1.02</td>
+</tr>
+<tr>
+<td>1.94</td>
+<td>1.17</td>
+<td>1.54</td>
+</tr>
+<tr>
+<td>1.02</td>
+<td>0.84</td>
+<td>1.30</td>
+</tr>
+</tbody>
+<tbody></tbody>
+</table>
+<p data-line="209"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="223" id="Dilated-Convolution">Dilated Convolution</h2>
+<p data-line="225"><img src="images/dilated.gif" alt="dilated.gif" /></p>
+<p data-line="227">Dilated convolution is a way of increasing receptive view (global view) of the network exponentially and linear parameter accretion. With this purpose, it finds usage in applications cares more about integrating knowledge of the wider context with less cost.</p>
+<p data-line="229"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<p data-line="242"><strong>What is dilated convolution doing?</strong></p>
+<p data-line="244"><img src="https://www.saama.com/wp-content/uploads/2017/12/09.jpg" alt="dilated" /></p>
+<p data-line="247"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="261" id="Fractionally-Slided-or-Transpose-or-Deconvolution">Fractionally Slided or Transpose or Deconvolution</h2>
+<p data-line="263"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<p data-line="272"><img src="http://www.inference.vc/content/images/2016/05/conv-deconv.png" alt="DeConvolution" /></p>
+<p data-line="274">It is not possible to interpolate a single pixel value into many values.</p>
+<p data-line="276">The quick and dirty solution is to do some fancy padding to the image and then apply a convolution operation. This operation will obviously not result in the same pixel values of the original image.</p>
+<p data-line="278"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<p data-line="294"><img src="images/Normal.gif" alt="Normal.gif" /></p>
+<p data-line="296"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<p data-line="306"><img src="https://github.com/vdumoulin/conv_arithmetic/raw/master/gif/padding_strides_transposed.gif" alt="Deconv" /></p>
+<p data-line="308"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="323" id="Depthwise-Convolution">Depthwise Convolution</h2>
+<p data-line="324"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<p data-line="339"><strong>Normal Convolution</strong></p>
+<p data-line="341"><img src="images/normal.gif" alt="normal.gif" /></p>
+<p data-line="343"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<p data-line="358"><strong>Depthwise Convolution</strong></p>
+<p data-line="360"><img src="images/depthwise.gif" alt="depthwise.gif" /></p>
+<p data-line="362">Let’s say we have a 3x3 convolutional layer on 16 input channels and 32 output channels. What happens in detail is that every of the 16 channels is traversed by 32 3x3 kernels resulting in 512 (16x32) feature maps. Next, we merge 1 feature map out of every input channel by adding them up. Since we can do that 32 times, we get the 32 output channels we wanted.</p>
+<p data-line="364">For a depthwise separable convolution on the same example, we traverse the 16 channels with 1 3x3 kernel each, giving us 16 feature maps. Now, before merging anything, we traverse these 16 feature maps with 32 1x1 convolutions each and only then start to them add together. This results in 656 (16x3x3 + 16x32x1x1) parameters opposed to the 4608 (16x32x3x3) parameters from above.</p>
+<p data-line="366"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="383" id="Strides">Strides</h2>
+<p data-line="385"><strong>No Stride</strong></p>
+<p data-line="387"><img src="http://machinelearninguru.com/_images/topics/computer_vision/basics/convolutional_layer_1/stride1.gif" alt="no-stride" width="500" /></p>
+<p data-line="389"><strong>Strides</strong></p>
+<p data-line="391"><img src="http://machinelearninguru.com/_images/topics/computer_vision/basics/convolutional_layer_1/stride2.gif" alt="stride" width="500" /></p>
+<p data-line="393"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="407" id="MaxPool">MaxPool</h2>
+<p data-line="409"><img src="images/maxpool.gif" alt="maxpool.gif" /></p>
+<p data-line="411"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="425" id="Pointwise-or-1x1-Convolution">Pointwise or 1x1 Convolution</h2>
+<p data-line="427"><img src="images/1x1.gif" alt="1x1.gif" /></p>
+<p data-line="429"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="443" id="Separable-Convolution">Separable Convolution</h2>
+<p data-line="445">It is used immensely in Xception-Incepeption Networks.</p>
+<p data-line="447">![separable convolution.gif](images/separable convolution.gif)<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="462" id="Grouped-Convolution">Grouped Convolution</h2>
+<p data-line="464"><img src="https://ikhlestov.github.io/images/ML_notes/convolutions/05_2_group_convolutions.png" alt="grouped" /></p>
+<p data-line="466">Grouped convolutions were initial mentioned in AlexNet, and later reused in ResNeXt. Main motivation of such convolutions is to reduce computational complexity while dividing features on groups.</p>
+<p data-line="468"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="482" id="DropOut">DropOut</h2>
+<p data-line="484"><img src="images/dropout.gif" alt="dropout.gif" /><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<h2 data-line="498" id="Residual-Blocks">Residual Blocks</h2>
+<p data-line="500"><img src="https://ikhlestov.github.io/images/models_architectures/resnets_modelvariants.png" alt="residual" /></p>
+<p data-line="503"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</p>
+<hr />
+<h1 data-line="519" id="Architectural-Basics-1">Architectural Basics 1</h1>
+<p data-line="521">We need to follow some steps and consider few things before we can define our architecture.</p>
+<p data-line="523">Let us assume we are training a heavy image recognition program.</p>
+<p data-line="525">What all do we need to consider?</p>
+<p data-line="527"><img src="https://media1.tenor.com/images/0e42110c65d57aa0029a291585e200f5/tenor.gif" alt="thinking" /></p>
+<ol>
+<li>
+<p data-line="529">Data Augmentation</p>
+<ul>
+<li>Use inbuilt data augmentation options in Keras, etc.</li>
+<li>Use <a href="https://github.com/aleju/imgaug"> Image augmentation for machine learning experiments</a></li>
+<li>Train network to one image size (say 224x224) and then fine tune after for less opochs to larger size (say 448x448)</li>
+<li>Train image detection network with image classification data</li>
+</ul>
+</li>
+<li>
+<p data-line="535">Initialization</p>
+<ul>
+<li>Random (default)</li>
+<li>Xavier</li>
+<li>Glorot</li>
+</ul>
+</li>
+<li>
+<p data-line="540">Activation Function</p>
+<ul>
+<li>Sigmoid X(</li>
+<li>ReLU</li>
+<li>Leaky ReLU</li>
+<li>ELU</li>
+<li>SELU</li>
+</ul>
+</li>
+<li>
+<p data-line="547">Loss Function</p>
+<ul>
+<li>Cross-Entropy Loss</li>
+<li>Triplet-loss - multi-class loss from <a href="https://arxiv.org/abs/1503.03832">[1503.03832] FaceNet: A Unified Embedding for Face Recognition and Clustering</a></li>
+<li>Center Loss from <a href="http://ydwen.github.io/papers/WenECCV16.pdf">this paper</a></li>
+<li>Angular Softmax from <a href="https://arxiv.org/abs/1704.08063"> SphereFace: Deep Hypersphere Embedding for Face Recognition</a></li>
+<li>Custom Loss Function</li>
+</ul>
+</li>
+<li>
+<p data-line="554">Regularization</p>
+<ul>
+<li>DropOut</li>
+<li>Label Smoothing (non-intuitive awesomeness)</li>
+</ul>
+</li>
+<li>
+<p data-line="558">Normalization</p>
+<ul>
+<li>Batch Normalization</li>
+<li>Layer Normalization</li>
+<li>Weight Normalization</li>
+</ul>
+</li>
+<li>
+<p data-line="563">Optimizer</p>
+<ul>
+<li>SGD</li>
+<li>RMSProp</li>
+<li>Adam</li>
+<li>Cyclic Learning Rates</li>
+</ul>
+</li>
+<li>
+<p data-line="569">Convolutions</p>
+<ul>
+<li>Usual Convolutions (stick to 3x3)</li>
+<li>1x1 Convolution</li>
+<li>Cx1, 1XC Convolutions</li>
+<li>Grouped Convolutions</li>
+<li>Depthwise Separable convolutions</li>
+<li>MaxPooling</li>
+</ul>
+</li>
+<li>
+<p data-line="577">Other Arch Decisions</p>
+<ul>
+<li>Average Pooling as part of the last layer</li>
+<li>Inception or ResNet or DenseNet module</li>
+<li>Skip Connections</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h1 data-line="585" id="Assignment-3">Assignment 3</h1>
+<ol>
+<li>Pick any 3 topics of your choice from the above content and write an article between 100-200 words on them.</li>
+<li>Write these articles in markdown format</li>
+<li>Upload your markdown file to Assignment 3 Folder</li>
+<li>Deadline is Wednesdat 11:30PM</li>
+</ol>
+</body>
+              </html>
