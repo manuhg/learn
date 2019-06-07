@@ -1,0 +1,3 @@
+https://github.com/atulkum/pointer_summarizer
+https://github.com/ymfa/seq2seq-summarizer
+https://github.com/abisee/pointer-generator
