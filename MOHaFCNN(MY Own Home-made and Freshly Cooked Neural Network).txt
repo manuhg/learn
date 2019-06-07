@@ -40,3 +40,24 @@ https://towardsdatascience.com/yolov2-to-detect-your-own-objects-soccer-ball-usi
 https://github.com/deep-diver/Soccer-Ball-Detection-YOLOv2/blob/master/YOLOv2-Train.ipynb
 https://github.com/szq0214/DSOD
 https://arxiv.org/pdf/1311.2524.pdf
+
+import os
+import pickle
+import PIL.Image
+import numpy as np
+import glob
+import sys
+import shutil
+from urls import src_images
+sys.path.append('dependencies')
+import dnnlib
+import dnnlib.tflib as tflib
+import config
+from encoder.generator_model import Generator
+
+from facegen_utils import exec_cmd, Downloader, exists, aligned_img_names
+from image_aligner import ImageAligner
+from latents_generator import LatentsGenerator
+
+synthesis_kwargs = dict(output_transform=dict(func=tflib.convert_images_to_uint8,
+                                              nchw_to_nhwc=True), minibatch_size=8)
